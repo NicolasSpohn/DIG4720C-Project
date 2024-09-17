@@ -257,7 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notePrefab: {fileID: 8456270267236048027, guid: c65de75724e175143a9d3e9ea983b95e, type: 3}
   noteSpawnTimer: 2
-  howManyNotes: 15
+  howManyNotes: 20
 --- !u!4 &586108227
 Transform:
   m_ObjectHideFlags: 0
