@@ -22,7 +22,7 @@ public class ButtonController : MonoBehaviour
         if (Input.touchCount > 0)
         {
             theSR.sprite = pressedImage;
-            Instantiate()
+            //Instantiate()
         }
 
         if(Input.touchCount == 0)
