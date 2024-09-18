@@ -13,6 +13,11 @@ public class QuitGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        void doExitGame() => Application.Quit();
+
+    }
+
+    public void Quitgame()
+    {
+        Application.Quit();
     }
 }
