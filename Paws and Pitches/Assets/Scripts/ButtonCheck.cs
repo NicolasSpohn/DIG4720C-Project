@@ -9,6 +9,8 @@ public class ButtonCheck : MonoBehaviour
     public int points = 0;
 
     public TextMeshProUGUI pointText;
+    public AudioClip audGood;
+    public AudioClip audBad;
 
     void Update()
     {
@@ -24,9 +26,17 @@ public class ButtonCheck : MonoBehaviour
             //Vector2 touchPos = Camera.main.ScreenToWorldPoint (touch.position);
 
             //if (touch.phase == TouchPhase.Began)
-                //Instantiate(box , touchPos, Quaternion.identity);
+            //Instantiate(box , touchPos, Quaternion.identity);
+
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.PlayOneShot(audGood);
 
             points += 10;
+        }
+        else
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.PlayOneShot(audBad);
         }
     }
 }
