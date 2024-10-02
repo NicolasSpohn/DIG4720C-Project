@@ -11,6 +11,15 @@ public class ButtonCheck : MonoBehaviour
     public TextMeshProUGUI pointText;
     public AudioClip audGood;
     public AudioClip audBad;
+    public Color wantedColor;
+
+    SpriteRenderer m_SpriteRenderer;
+
+    void Start()
+    {
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
+        StartCoroutine(ButtonPressed());
+    }
 
     void Update()
     {
@@ -31,12 +40,21 @@ public class ButtonCheck : MonoBehaviour
             AudioSource audio = GetComponent<AudioSource>();
             audio.PlayOneShot(audGood);
 
+            m_SpriteRenderer.color = wantedColor;
+
             points += 10;
         }
+
         else
         {
             AudioSource audio = GetComponent<AudioSource>();
             audio.PlayOneShot(audBad);
         }
     }
+    IEnumerator ButtonPressed()
+    {
+        yield return new WaitForSeconds(0.2f);
+        m_SpriteRenderer.color = Color.white;
+    }
+
 }

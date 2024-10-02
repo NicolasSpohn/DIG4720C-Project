@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4574044070915709558}
   - component: {fileID: 2141840083817448545}
   - component: {fileID: -2086492440001011053}
+  - component: {fileID: 721714541676702198}
   m_Layer: 0
   m_Name: NoteWhite
   m_TagString: Note
@@ -94,13 +95,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8456270267236048027}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4be615257288bbd4dacf482e27c6f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 0
+  points: 10
   pointText: {fileID: 0}
+  audGood: {fileID: 8300000, guid: 246847bff8770c443ad2247e7b5028ac, type: 3}
+  audBad: {fileID: 8300000, guid: 8e94f4b51084b1048929a7c704c08137, type: 3}
 --- !u!50 &2141840083817448545
 Rigidbody2D:
   serializedVersion: 4
@@ -115,8 +118,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -173,3 +176,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &721714541676702198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8456270267236048027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afa4ff0104171e4f9d14f91a441e8d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
