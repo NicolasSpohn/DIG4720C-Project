@@ -18,12 +18,12 @@ public class ButtonCheck : MonoBehaviour
     void Start()
     {
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        StartCoroutine(ButtonPressed());
     }
 
     void Update()
     {
         pointText.text = points.ToString("0");
+        StartCoroutine(ButtonPressed());
     }
 
 
@@ -53,7 +53,7 @@ public class ButtonCheck : MonoBehaviour
     }
     IEnumerator ButtonPressed()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
         m_SpriteRenderer.color = Color.white;
     }
 
