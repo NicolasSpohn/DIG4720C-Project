@@ -1,0 +1,59 @@
+using UnityEngine;
+using System.Collections;
+
+public class Activator ; MonoBehaviour{
+
+    SpriteRenderer sr;
+    public keyCode key;
+    bool active =false;
+    GameObject note;
+    Color old;
+
+    void Awake(){
+        sr=GetComponent<SpriteRenderer>();
+    }
+
+    void Start(){
+        old=sr.color;
+    }
+
+    void Update(){
+
+        // go back and replace this with an active touch thing
+        // checking if one taps a certain area of the screen
+        if(Input.GetKeyDown(key)){
+            StartCoroutine(Pressed());
+        }
+
+        if(Input.GetKeyDown(key)&&active){
+            Destroy(note);
+            AddScore();
+            active=false;
+        }
+
+    }
+
+    void OnTriggerEnter2D(Collider2D col){
+        active = true;
+
+        if (col.gameObject.tag=="Note")
+            note=col.gameObject;
+    }
+
+    void OnTriggerExit2D(Collider2D col){
+        active = false;
+    }
+
+    void AddScore(){
+        // add script to text you want to add this to, then add "score" to the name
+        PlayerPrefs.SetInt("Score",PlayerPrefts.GetInt("Score")+100)
+    }
+
+    IEnumerator Pressed(){
+        Color old = sr.color;
+        sr.color=new Color(0,0,0);
+        yield return new WaitForSeconds(0.2f);
+        sr.color=old;
+
+    }
+}
