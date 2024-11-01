@@ -4,7 +4,7 @@ using System.Collections;
 public class Note : MonoBehaviour {
 
     // set angular drag and linear velocity to 0 on rigidbody before doing anything
-    RigidBody2D rb;
+    Rigidbody2D rb;
     public float speed;
 
     void Awake(){
@@ -12,7 +12,7 @@ public class Note : MonoBehaviour {
     }
 
     void Start(){
-        rb.velocity=new Vector2(0,-speed)
+        rb.velocity=new Vector2(0,-speed);
 
     }
 
