@@ -89,7 +89,6 @@ public class Activator : MonoBehaviour
     }
 
     IEnumerator Pressed(){
-        Color old = sr.color;
         sr.color=new Color(0,0,0);
         yield return new WaitForSeconds(0.2f);
         sr.color=old;
