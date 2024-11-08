@@ -1,15 +1,25 @@
+using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour{
 
     //int multiplier = 1;
     //int streak = 0;
 
-    public AudioClip audBad;
-    
-    void Start(){
 
+    public GameOverScreen GameOverScreen;
+    public AudioClip audBad;
+
+    void Start()
+    {
+        PlayerPrefs.SetInt("Score",0);
+    }
+
+    public void Win()
+    {
+        GameOverScreen.Setup(PlayerPrefs.GetInt("Score"));
     }
 
     void Update(){
