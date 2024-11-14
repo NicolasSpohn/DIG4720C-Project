@@ -9,9 +9,9 @@ public class Point_Text : MonoBehaviour
         PlayerPrefs.SetInt("Score",PlayerPrefs.GetInt("Score")*0);
     }
 
-    public string name;
+    public string textName;
 
     void Update(){
-        GetComponent<Text>().text = PlayerPrefs.GetInt(name) + "";
+        GetComponent<Text>().text = PlayerPrefs.GetInt(textName) + "";
     }
 }

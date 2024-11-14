@@ -1317,7 +1317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d45ed41aad125b44b58c5711f429505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Score
+  textName: Score
 --- !u!114 &217363265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3649,7 +3649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d45ed41aad125b44b58c5711f429505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: SavedScore
+  textName: 
 --- !u!114 &1137460043
 MonoBehaviour:
   m_ObjectHideFlags: 0

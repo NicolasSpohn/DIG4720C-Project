@@ -8,8 +8,10 @@ public class GameOverScreen : MonoBehaviour
 
     public void Setup(int score)
     {
+        int coins = 10;
         PlayerPrefs.SetInt("SavedScore",score);
         gameObject.SetActive(true);
+        StaticData.currency += coins;
     }
 
 }
