@@ -16,6 +16,7 @@ public class CurrencyDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerPrefs.SetInt("Currency", StaticData.currency);
         GetComponent<Text>().text = PlayerPrefs.GetInt(textName) + "";
     }
 }
