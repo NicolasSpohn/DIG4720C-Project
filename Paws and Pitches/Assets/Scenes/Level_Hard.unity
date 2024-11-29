@@ -1390,7 +1390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 100
-  createMode: 1
+  createMode: 0
   n: {fileID: 946637109137531911, guid: 8486b60429e0bd84ea68e77bafb80bc2, type: 3}
   audGood: {fileID: 8300000, guid: 246847bff8770c443ad2247e7b5028ac, type: 3}
 --- !u!61 &96817551
@@ -13663,7 +13663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 102
-  createMode: 1
+  createMode: 0
   n: {fileID: 946637109137531911, guid: 8486b60429e0bd84ea68e77bafb80bc2, type: 3}
   audGood: {fileID: 8300000, guid: 246847bff8770c443ad2247e7b5028ac, type: 3}
 --- !u!61 &969710540
@@ -24127,7 +24127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 115
-  createMode: 1
+  createMode: 0
   n: {fileID: 946637109137531911, guid: 8486b60429e0bd84ea68e77bafb80bc2, type: 3}
   audGood: {fileID: 8300000, guid: 246847bff8770c443ad2247e7b5028ac, type: 3}
 --- !u!61 &1549062342
@@ -33672,7 +33672,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 246847bff8770c443ad2247e7b5028ac, type: 3}
     - target: {fileID: 6909053740802811427, guid: 02a939be311ddac4d9c1202a6fba390c, type: 3}
       propertyPath: createMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
